@@ -1,7 +1,7 @@
 <?php include "../includes/cabecalho.php"; ?>
 <hr>
-<p>
-    <a href="medicos-formulario-inserir.php" class="btn btn-primary"><i class="bi-plus-circle"></i>Novo médico</a>
+<p class="text-center">
+    <a href="medicos-formulario-inserir.php" class="btn btn-primary mt-2"><i class="bi-plus-circle"></i>Novo médico</a>
 </p>
 
 <?php 
@@ -10,7 +10,7 @@ include "../includes/conexao.php";
 $sqlBusca = "SELECT * FROM tb_medicos;";
 $listaDeMedicos = mysqli_query($conexao , $sqlBusca);
 ?>
-<table class="table">
+<table class="table mt-4">
     <tr class="table-primary">
         <th>ID</th>
         <th>Nome</th>
@@ -27,7 +27,8 @@ $listaDeMedicos = mysqli_query($conexao , $sqlBusca);
         echo "<td>{$medico['telefone']}</td>";
         echo "<td>{$medico['crm']}</td>";
         echo "<td>{$medico['especialidade']}</td>";
-        echo "<td>Alterar | Excluir</td>";
+        echo "<td><a href='medicos-formulario-alterar.php?id_medico={$medico['id']}'>Alterar</a> | ";
+        echo "<a href='medicos-excluir.php?id_medico={$medico['id']}'>Excluir</a></td>";
         echo "</tr>";
     }
     ?>

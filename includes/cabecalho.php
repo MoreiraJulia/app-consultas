@@ -14,7 +14,7 @@
             <h1>APP Consultas</h1>
             <hr>
         </header>
-        <nav class="text-center d-flex justify-content-evenly">
+        <nav class="d-flex justify-content-evenly">
             <a href="../medicos/medicos-listar.php"><img src="../img/medico.png">Cadastro de médicos</a>
             <a href="#"><img src="../img/paciente1.png" >Cadastro de pacientes</a>
             <a href="#"><img src="../img/calendario.png">Agendamento de consultas</a>
