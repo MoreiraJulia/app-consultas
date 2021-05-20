@@ -8,7 +8,7 @@
             <input name="nome" class="form-control">
         </p>
         <p class="col-6">
-            <label class="form-label">>Telefone:</label>
+            <label class="form-label">Telefone:</label>
             <input name="telefone" class="form-control">
         </p>
         <p class="col-2">

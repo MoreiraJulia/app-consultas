@@ -15,7 +15,7 @@
             <hr>
         </header>
         <nav class="d-flex justify-content-evenly">
-            <a href="../medicos/medicos-listar.php"><img src="../img/medico.png">Cadastro de médicos</a>
-            <a href="../pacientes/pacientes-listar.php"><img src="../img/paciente1.png" >Cadastro de pacientes</a>
-            <a href="#"><img src="../img/calendario.png">Agendamento de consultas</a>
+            <a href="../medicos/medicos-listar.php" class="btn btn-outline-primary"><img src="../img/medico.png">Cadastro de médicos</a>
+            <a href="../pacientes/pacientes-listar.php" class="btn btn-outline-primary"><img src="../img/paciente1.png" >Cadastro de pacientes</a>
+            <a href="../agenda/agenda-listar.php" class="btn btn-outline-primary"><img src="../img/calendario.png">Agendamento de consultas</a>
         </nav>

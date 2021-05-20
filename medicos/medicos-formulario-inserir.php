@@ -13,7 +13,7 @@
     </p>
     <p class="col-6">
         <label>Especialidade:</label>
-        <select name="especialidade" class="form-select" aria-label="Default select example">
+        <select name="especialidade" class="form-select" aria-label="Default select">
             <option value="Cardiologista">Cardiologista</option>
             <option value="Nutricionista">Nutricionista</option>
             <option value="Ortopedista">Ortopedista</option>

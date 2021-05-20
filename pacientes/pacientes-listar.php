@@ -12,7 +12,7 @@ $listaDePacientes = mysqli_query($conexao , $sqlBusca);
     <a href="pacientes-formulario-inserir.php" class="btn btn-primary mt-2"><i class="bi-plus-circle"></i>Novo paciente</a>
 </p>
 
-<table class="table mt-4">
+<table class="table mt-4 text-center">
     <tr class="table-primary">
         <td>ID</td>
         <td>Nome</td>

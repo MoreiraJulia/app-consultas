@@ -10,7 +10,7 @@ include "../includes/conexao.php";
 $sqlBusca = "SELECT * FROM tb_medicos;";
 $listaDeMedicos = mysqli_query($conexao , $sqlBusca);
 ?>
-<table class="table mt-4">
+<table class="table mt-4 text-center">
     <tr class="table-primary">
         <th>ID</th>
         <th>Nome</th>

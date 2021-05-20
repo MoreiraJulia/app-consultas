@@ -1,17 +1,17 @@
 <?php
 include "../includes/cabecalho.php";
 
+include "../includes/conexao.php";
+
 $id_paciente = $_GET['id_paciente'];
 
-include "../includes/conexao.php";
-$sqlBuscar = "SELECT * FROM tb_pacientes WHERE id={$id_paciente};";
+$sqlBuscar = "SELECT * FROM tb_pacientes WHERE id={$id_paciente}";
 
 $listaDePacientes = mysqli_query($conexao, $sqlBuscar);
 
 $nome = $telefone = $data_nascimento = $convenio = $diagnostico = "";
 
-while($paciente = mysqli_fetch_assoc
-($listaDePacientes)){
+while($paciente = mysqli_fetch_assoc($listaDePacientes)){
     $nome = $paciente['nome'];
     $telefone = $paciente['telefone'];
     $data_nascimento = $paciente['data_nascimento'];
