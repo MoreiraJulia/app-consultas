@@ -20,4 +20,5 @@ if($resultado){
 }else{
     echo "Algum erro aconteceu";
 }
+
 ?>

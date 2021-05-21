@@ -20,6 +20,9 @@ $listaDeMedicos = mysqli_query($conexao , $sqlBusca);
         <th>Ações</th>
     </tr>
     <?php
+
+  
+   
     while($medico = mysqli_fetch_assoc($listaDeMedicos)){
         echo "<tr>";
         echo "<td>{$medico['id']}</td>";
@@ -31,6 +34,7 @@ $listaDeMedicos = mysqli_query($conexao , $sqlBusca);
         echo "<a href='medicos-excluir.php?id_medico={$medico['id']}'>Excluir</a></td>";
         echo "</tr>";
     }
+    
     ?>
 </table>
 
