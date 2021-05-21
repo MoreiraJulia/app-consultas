@@ -44,7 +44,7 @@ $listaDeAgenda = mysqli_query($conexao, $sqlBusca);
         echo "<td>{$agenda['nome_medico']}</td>";
         echo "<td>{$agenda['sala']}</td>";
         echo "<td>{$agenda['nome_paciente']}</td>";
-        echo "<td>alterar | ";
+        echo "<td><a href='agenda-formulario-alterar.php?id_agenda={$agenda['id']}'>alterar</a> | ";
         echo "<a href='agenda-excluir.php?id_agenda={$agenda['id']}'>excluir</a></td>";
         echo "</tr>";
     }
