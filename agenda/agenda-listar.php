@@ -17,8 +17,33 @@ $listaDeAgenda = mysqli_query($conexao, $sqlBusca);
 ?>
 
 <hr>
+
+<?php if(isset($_GET['mensagem'])){
+    if($_GET['mensagem'] == 'cadastrado'){
+        ?>
+        <div class="alert alert-primary">
+            Cadastrado com sucesso!
+        </div>
+    <?php 
+    }
+    if($_GET['mensagem'] == 'alterado'){
+        ?>
+        <div class="alert alert-warning">
+            Alterado com sucesso!
+        </div>
+    <?php
+    }
+    if($_GET['mensagem'] == 'excluido'){
+    ?>
+        <div class="alert alert-danger">
+            Excluido com sucesso!
+        </div>
+    <?php
+    }
+}
+    ?>
 <p class="text-center">
-    <a href="agenda-formulario-inserir.php" class="btn btn-primary mt-2"><i class="bi-plus-circle"></i>Agendar consulta</a>
+    <a href="agenda-formulario-inserir.php" class="btn btn-primary mt-2"><i class="bi bi-plus-circle"></i>Agendar consulta</a>
 </p>
 
 <table class="table mt-4 text-center">
@@ -44,8 +69,8 @@ $listaDeAgenda = mysqli_query($conexao, $sqlBusca);
         echo "<td>{$agenda['nome_medico']}</td>";
         echo "<td>{$agenda['sala']}</td>";
         echo "<td>{$agenda['nome_paciente']}</td>";
-        echo "<td><a href='agenda-formulario-alterar.php?id_agenda={$agenda['id']}'>alterar</a> | ";
-        echo "<a href='agenda-excluir.php?id_agenda={$agenda['id']}'>excluir</a></td>";
+        echo "<td><a class='btn btn-warning' href='agenda-formulario-alterar.php?id_agenda={$agenda['id']}'><i class='bi bi-pencil-square'></i></a> ";
+        echo "<a class='btn btn-danger' href='agenda-excluir.php?id_agenda={$agenda['id']}'><i class='bi bi-x-lg'></i></a></td>";
         echo "</tr>";
     }
     ?>

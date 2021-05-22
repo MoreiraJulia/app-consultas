@@ -19,9 +19,8 @@ $sqlAlterar = "UPDATE tb_agenda set
 
 $resultado = mysqli_query($conexao, $sqlAlterar);
 
-if($resulta){
-    echo "Cadastro alterado com sucesso.<br>";
-    echo "<a href='agenda-listar.php'>Voltar</a>";
+if($resultado){
+    header('location:agenda-listar.php?mensagem=alterado');
 }else{
     echo "Algo deu errado";
 }

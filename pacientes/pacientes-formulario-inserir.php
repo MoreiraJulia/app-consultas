@@ -1,6 +1,6 @@
 <?php include "../includes/cabecalho.php" ?>
 
-
+<hr>
 <form  name="formulario-pacientes" method="post" action="pacientes-inserir.php">
     <div class="row">
         <p class="col-6">

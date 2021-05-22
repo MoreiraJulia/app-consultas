@@ -8,8 +8,7 @@ $sqlExcluir = "DELETE FROM tb_pacientes WHERE id = {$id_paciente}";
 $resultado = mysqli_query($conexao, $sqlExcluir);
 
 if($resultado){
-    echo "Excluído com sucesso <br>";
-    echo "<a href='pacientes-listar.php'>Voltar</a>";
+    header('location:pacientes-listar.php?mensagem=excluido');
 }else{
     echo "Ocorreu algum problema";
 }

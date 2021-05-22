@@ -1,6 +1,8 @@
 <?php include "../includes/cabecalho.php"; ?>
 
-<form name="formulario-inserir-medicos" class="mt-5" method="post" action="medicos-inserir.php">
+<hr>
+
+<form name="formulario-inserir-medicos" method="post" action="medicos-inserir.php">
 <div class="row">
     <p class="col-md-6">
         <label class="form-label">Nome:</label><input class="form-control" name="nome">
